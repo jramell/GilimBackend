@@ -25,7 +25,7 @@ Fans CRUD:
                               PATCH  /fans/:email(.:format)                                       fans#update
                               PUT    /fans/:email(.:format)                                       fans#update
                               DELETE /fans/:email(.:format)                                       fans#destroy
-```<br>
+```
 
 Artists CRUD:
 ```
@@ -38,7 +38,7 @@ Artists CRUD:
                               PUT    /artists/:email(.:format)                                    artists#update
                               DELETE /artists/:email(.:format)                                    artists#destroy
  ```
- <br>
+
 Achievements CRUD:
 ```
                 achievements  GET    /achievements(.:format)                                      achievements#index
@@ -49,7 +49,7 @@ Achievements CRUD:
                               PATCH  /achievements/:id(.:format)                                  achievements#update
                               PUT    /achievements/:id(.:format)                                  achievements#update
                               DELETE /achievements/:id(.:format)                                  achievements#destroy
-```<br>
+```
 Event CRUD:
 ```
                        events GET    /events(.:format)                                            events#index
@@ -61,7 +61,7 @@ Event CRUD:
                               PUT    /events/:id(.:format)                                        events#update
                               DELETE /events/:id(.:format)                                        events#destroy
                               
-```<br>
+```
 
 Artist profiles CRUD. Every profile must be associated to exactly one artist:
 ```
@@ -73,7 +73,7 @@ Artist profiles CRUD. Every profile must be associated to exactly one artist:
                               PATCH  /artist_profiles/:id(.:format)                               artist_profiles#update
                               PUT    /artist_profiles/:id(.:format)                               artist_profiles#update
                               DELETE /artist_profiles/:id(.:format)                               artist_profiles#destroy
-```      <br>                       
+```                          
 Songs CRUD. Songs are associated with at least one artist:
 ```
                               GET    /songs(.:format)                                             songs#index
@@ -84,7 +84,7 @@ Songs CRUD. Songs are associated with at least one artist:
                               PATCH  /songs/:id(.:format)                                         songs#update
                               PUT    /songs/:id(.:format)                                         songs#update
                               DELETE /songs/:id(.:format)                                         songs#destroy
-``` <br>             
+```            
 Retrieve achievements by event:
 ```
            event_achievements GET    /events/:event_id/achievements(.:format)                     achievements#index
@@ -95,7 +95,7 @@ Retrieve achievements by event:
                               PATCH  /events/:event_id/achievements/:id(.:format)                 achievements#update
                               PUT    /events/:event_id/achievements/:id(.:format)                 achievements#update
                               DELETE /events/:event_id/achievements/:id(.:format)                 achievements#destroy
-```<br>
+```
 Presentation cards CRUD: 
 ```
            presentation_cards GET    /presentation_cards(.:format)                                presentation_cards#index
@@ -106,7 +106,7 @@ Presentation cards CRUD:
                               PATCH  /presentation_cards/:id(.:format)                            presentation_cards#update
                               PUT    /presentation_cards/:id(.:format)                            presentation_cards#update
                               DELETE /presentation_cards/:id(.:format)                            presentation_cards#destroy
-```<br>                              
+```                           
 Genres CRUD:
 ```
                        genres GET    /genres(.:format)                                            genres#index
@@ -117,7 +117,7 @@ Genres CRUD:
                               PATCH  /genres/:id(.:format)                                        genres#update
                               PUT    /genres/:id(.:format)                                        genres#update
                               DELETE /genres/:id(.:format)                                        genres#destroy
-```<br>
+```
 
 Retrieve events by organizing artist:
 ```
@@ -130,7 +130,7 @@ Retrieve events by organizing artist:
                               PATCH  /artists/:artist_email/events/:id(.:format)                  events#update
                               PUT    /artists/:artist_email/events/:id(.:format)                  events#update
                               DELETE /artists/:artist_email/events/:id(.:format)                  events#destroy
-```<br>
+```
 
 Retrieve artist profile by artist email:
 ```
@@ -142,7 +142,7 @@ Retrieve artist profile by artist email:
                               PATCH  /artists/:artist_email/artist_profiles/:id(.:format)         artist_profiles#update
                               PUT    /artists/:artist_email/artist_profiles/:id(.:format)         artist_profiles#update
                               DELETE /artists/:artist_email/artist_profiles/:id(.:format)         artist_profiles#destroy
-```<br>                        
+```                       
 
 Retrieve presentation card by artist email:
 ```
@@ -154,7 +154,7 @@ edit_artist_presentation_card GET    /artists/:artist_email/presentation_cards/:
                               PATCH  /artists/:artist_email/presentation_cards/:id(.:format)      presentation_cards#update
                               PUT    /artists/:artist_email/presentation_cards/:id(.:format)      presentation_cards#update
                               DELETE /artists/:artist_email/presentation_cards/:id(.:format)      presentation_cards#destroy
-```<br>                              
+```                             
 
 Retrieve songs by artist email:
 ```
@@ -166,18 +166,18 @@ Retrieve songs by artist email:
                               PATCH  /artists/:artist_email/songs/:id(.:format)                   songs#update
                               PUT    /artists/:artist_email/songs/:id(.:format)                   songs#update
                               DELETE /artists/:artist_email/songs/:id(.:format)                   songs#destroy
-```<br>
+```
 Register artist or event followal with the fan's email:
 ```
                               POST   /fans/:email/followevent(.:format)                           fans#followevent
                               POST   /fans/:email/followartist(.:format)                          fans#followartist
-```<br>
+```
 Get recommended artists and events for fan with their email:
 ```
                               GET    /fans/:email/recommendedartists(.:format)                    fans#recommendedartists
                               GET    /fans/:email/recommendedevents(.:format)                     fans#recommendedevents
-```<br>
-<br>
+```
+
 
 
 ## 2. Detailed description (in spanish)
