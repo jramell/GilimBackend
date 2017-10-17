@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artist_id: 
+  latitude: MyString
+  longitude: MyString
+  name: MyString
+  placeName: MyString
+  description: MyString
+  assistants: MyString
+  date: 2017-04-23 08:33:41
+  followerCount: MyString
+  converted_image: MyString
+
+two:
+  artist_id: 
+  latitude: MyString
+  longitude: MyString
+  name: MyString
+  placeName: MyString
+  description: MyString
+  assistants: MyString
+  date: 2017-04-23 08:33:41
+  followerCount: MyString
+  converted_image: MyString

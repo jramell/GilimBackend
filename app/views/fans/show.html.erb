@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @fan.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @fan.password %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @fan.name %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @fan.longitude %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @fan.latitude %>
+</p>
+
+<p>
+  <strong>Followedartists:</strong>
+  <%= @fan.followedArtists %>
+</p>
+
+<p>
+  <strong>Followedevent:</strong>
+  <%= @fan.followedEvents %>
+</p>
+
+<p>
+  <strong>Discoverydistance:</strong>
+  <%= @fan.discoveryDistance %>
+</p>
+
+<%= link_to 'Edit', edit_fan_path(@fan) %> |
+<%= link_to 'Back', fans_path %>

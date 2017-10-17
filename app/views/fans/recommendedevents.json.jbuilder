@@ -1,0 +1,1 @@
+json.array! @recommendedEvents, partial: 'events/event', as: :event

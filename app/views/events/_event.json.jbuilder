@@ -1,0 +1,2 @@
+json.extract! event, :id, :artist_email, :latitude, :longitude, :name, :placeName, :description, :assistants, :date, :followerCount, :image, :converted_image, :created_at, :updated_at
+json.url event_url(event, format: :json)

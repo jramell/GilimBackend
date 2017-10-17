@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Presentation Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Artist</th>
+      <th>Song</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @presentation_cards.each do |presentation_card| %>
+      <tr>
+        <td><%= presentation_card.artist %></td>
+        <td><%= presentation_card.song %></td>
+        <td><%= link_to 'Show', presentation_card %></td>
+        <td><%= link_to 'Edit', edit_presentation_card_path(presentation_card) %></td>
+        <td><%= link_to 'Destroy', presentation_card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Presentation card', new_presentation_card_path %>

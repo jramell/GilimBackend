@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  email: MyString
+  password: MyString
+  name: MyString
+  longitude: MyString
+  latitude: MyString
+  followedArtists: MyString
+  followedEvent: MyString
+  discoveryDistance: 
+
+two:
+  email: MyString
+  password: MyString
+  name: MyString
+  longitude: MyString
+  latitude: MyString
+  followedArtists: MyString
+  followedEvent: MyString
+  discoveryDistance: 

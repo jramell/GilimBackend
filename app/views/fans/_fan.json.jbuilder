@@ -1,0 +1,2 @@
+json.extract! fan, :id, :email, :password, :name, :longitude, :latitude, :followedArtists, :followedEvents, :discoveryDistance, :achievements, :created_at, :updated_at
+json.url fan_url(fan, format: :json)
